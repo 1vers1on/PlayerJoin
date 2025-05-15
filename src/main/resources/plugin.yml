@@ -1,0 +1,28 @@
+name: PlayerJoin
+api-version: 1.13
+version: '${project.version}'
+main: moe.liminal.playerjoin.PlayerJoin
+author: 1vers1on
+description: Run a command on player join or leave
+
+softdepend: [PlaceholderAPI]
+
+commands:
+    playerjoin:
+        description: Main command for PlayerJoin
+        usage: /<command> [reload, help]
+        aliases: [pj]
+        permission: playerjoin.command
+
+permissions:
+  playerjoin.command:
+    description: Allows the player to run /playerjoin
+    default: true
+  playerjoin.onjoin:
+    description: Allows the player to run a command on join
+    default: true
+  playerjoin.onleave:
+    description: Allows the player to run a command on leave
+  playerjoin.reload:
+    description: Allows the player to reload the config
+    default: op

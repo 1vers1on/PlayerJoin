@@ -1,0 +1,5 @@
+join-commands:
+  - "say %player% has joined the server!"
+
+leave-commands:
+  - "say %player% has left the server!"
