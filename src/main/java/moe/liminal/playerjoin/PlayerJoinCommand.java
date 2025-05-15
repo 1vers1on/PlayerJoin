@@ -19,15 +19,15 @@ public class PlayerJoinCommand implements CommandExecutor {
         switch (args[0].toLowerCase()) {
             case "reload":
                 plugin.reloadConfig();
-                sender.sendMessage("&aConfig reloaded!");
+                sender.sendMessage("Config reloaded!");
                 break;
             case "help":
-                sender.sendMessage("&ePlayerJoin Help:");
-                sender.sendMessage("&e/playerjoin reload - Reload the plugin configuration.");
-                sender.sendMessage("&e/playerjoin help - Show this help message.");
+                sender.sendMessage("PlayerJoin Help:");
+                sender.sendMessage("/playerjoin reload - Reload the plugin configuration.");
+                sender.sendMessage("/playerjoin help - Show this help message.");
                 break;
             default:
-                sender.sendMessage("&cUnknown command. Use /playerjoin help for a list of commands.");
+                sender.sendMessage("Unknown command. Use /playerjoin help for a list of commands.");
                 break;
         }
         return true;
